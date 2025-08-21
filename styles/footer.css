@@ -6,6 +6,13 @@ footer {
     font: 14px/150% var(--font-family);
 }
 
-footer span:nth-child(1) {
-    margin-right: auto;
+footer div {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 375px) {
+    footer {
+        flex-direction: column;
+    }
 }
